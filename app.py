@@ -367,5 +367,37 @@ print(increament(2, by=1))
 """
 """ ********************************************************************************************************************************************************************** """
 """
+*args
+
+sometimes we want to pass multiple argumrnts to a function. 
+like shown in above increament function, increament function can take only 2 argument
+to solve this issue below is the soloution
+
+def multiply(*numbers):
+    total = 0
+    for number in numbers:
+        total *= number
+    return total
+
+
+passed all the arguments are stored in tuples. tuples are iterable
+"""
+""" ********************************************************************************************************************************************************************** """
+"""
+**args
+
+**args helps to pass multiple keyword arguments to a function adn it will be stored in a dictionary as a key pair value
+
+def save_user(**users):
+    print(users)
+    print(users['name'])
+
+save_user(id=1, name='shail', age=26)
+
+Output: {'id': 1, 'name': 'shail', 'age': 26}
+shail
+"""
+""" ********************************************************************************************************************************************************************** """
+"""
 
 """
