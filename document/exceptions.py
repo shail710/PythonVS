@@ -1,5 +1,5 @@
 """
-Basic exception Handling 
+Basic exception Handling
 to handle the error we need to put the statement int he try block
 to throw a friendly error we need to puth the exception in the except clause
 
@@ -108,7 +108,7 @@ else:
 --> to solve the we can duplicate file.close() statement to else block as well.
 but duplicating same statement is not a good practice
 
---> We can use finally clause. finally clause is always executed whether we have an exception or not 
+--> We can use finally clause. finally clause is always executed whether we have an exception or not
 
 try:
     file = open('exceptions.py')
@@ -207,20 +207,20 @@ except ValueError as error:
 code2 = """
 
 
-def calculate_xfactor(age):
-    if age <= 0:
-        return None
-    return 10 / age
+# def calculate_xfactor(age):
+#    if age <= 0:
+#         return None
+#     return 10 / age
 
 
-xfactor = calculate_xfactor(-1)
-if xfactor == None:
-    pass
-"""
-print('first code: ', timeit(code1, number=10000))
-print('second code: ', timeit(code2, number=10000))
+# xfactor = calculate_xfactor(-1)
+# if xfactor == None:
+#     pass
+# """
+# print('first code: ', timeit(code1, number=10000))
+# print('second code: ', timeit(code2, number=10000))
 
-Output:
-first code:  0.008477232000000001
-second code:  0.002522468
-"""
+# Output:
+# first code:  0.008477232000000001
+# second code:  0.002522468
+# """
